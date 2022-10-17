@@ -46,4 +46,4 @@ A dataset of images of lanes to be labelled by our models.
 ### Team Agreement
 Our first report detailing how we intend to work, basic plan for the project and protential risks.
 
-[Report](../reports/Team%20Agreement/Team_Agreement.pdf)
+[Report](https://github.com/Functional-Labelling-Lab/.github/blob/master/reports/Team%20Agreement/Team_Agreement.pdf)
