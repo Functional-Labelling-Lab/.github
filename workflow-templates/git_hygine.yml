@@ -1,0 +1,14 @@
+name: git_hygiene_names
+run-name: Checking if ${{ github.actor }} has good git hygiene!
+
+on:
+  push:
+  pull_request:
+    types: [opened, reopened]
+  
+  jobs:
+    check_branch_name:
+      runs-on: ubuntu-latest
+      name: Checking branch name from pull request ${{ github.event.pull_request.title }}
+      steps:
+        - run: echo "${GITHUB_REF#refs/heads/}"

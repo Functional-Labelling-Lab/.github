@@ -1,0 +1,5 @@
+{
+    "name": "Git Hygiene Enforcement",
+    "description": "Git hygiene checks for the Functional Labelling Lab.",
+    "iconName": "git_hygiene"
+}
