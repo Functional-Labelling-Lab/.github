@@ -50,7 +50,7 @@ Details a similar approach to that which we are taking.
 
 ## Reports
 ### Team Agreement
-Our first report detailing how we intend to work, basic plan for the project and protential risks.
+Our first report detailing how we intend to work, basic plan for the project and potential risks.
 
 [Report](https://github.com/Functional-Labelling-Lab/.github/blob/master/reports/Team%20Agreement/Team_Agreement.pdf)
 
@@ -67,6 +67,10 @@ prefix/branch-name-here
 | ref    | Refactor - should not change behaviour                                                    |
 | fix    | Fixing a bug, the jira ticket should be included - branch name can be generated from jira |
 | doc    | Adding or amending documentation                                                          |
+| msc    | Miscellaneous, any other change                                                           |
 
 ### Pull Requests
-
+This [pull request template](./../pull_request_template.md) is used for all repos.
+- Description
+- Goals of PR (for reviewer to compare with the achieved)
+- Current changes and intended changes (in case of draft PR)
