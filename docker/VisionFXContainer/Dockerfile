@@ -11,15 +11,15 @@ RUN apt-get install -y cmake g++ wget unzip libgtk2.0-dev pkg-config
 RUN mkdir /opencv-build
 WORKDIR /opencv-build
 
+# Get opencv 3.4 from repository
 ADD https://github.com/opencv/opencv/archive/3.4.16.zip opencv.zip
 RUN unzip opencv.zip
 
+# Build OpenCV
 RUN mkdir build
 WORKDIR /opencv-build/build
 RUN cmake ../opencv-3.4.16
-
 RUN cmake --build .
-
 RUN make install
 
 # Build Cabal dependencies
@@ -32,6 +32,7 @@ RUN cabal install haskell-language-server
 ENV INCLUDE_PATH=$HOME/usr/include:${INCLUDE_PATH}
 ENV LD_LIBRARY_PATH=$HOME/usr/local/lib:${LD_LIBRARY_PATH}
 
+# Copy the cabal project info and build with dependencies
 RUN mkdir /code
 WORKDIR /code
 
