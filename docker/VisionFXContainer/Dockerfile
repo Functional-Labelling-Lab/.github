@@ -11,7 +11,7 @@ RUN apt-get install -y cmake g++ wget unzip libgtk2.0-dev pkg-config
 RUN mkdir /opencv-build
 WORKDIR /opencv-build
 
-# Get opencv 3.4 from repository
+# Get OpenCV 3.4 from repository
 ADD https://github.com/opencv/opencv/archive/3.4.16.zip opencv.zip
 RUN unzip opencv.zip
 
@@ -22,7 +22,7 @@ RUN cmake ../opencv-3.4.16
 RUN cmake --build .
 RUN make install
 
-# Build Cabal dependencies
+# Build Cabal Dependencies
 FROM opencv AS dependencies
 
 # Language Server Support
@@ -35,9 +35,7 @@ ENV LD_LIBRARY_PATH=$HOME/usr/local/lib:${LD_LIBRARY_PATH}
 # Copy the cabal project info and build with dependencies
 RUN mkdir /code
 WORKDIR /code
-
 COPY *.cabal cabal.project ./
-
 RUN cabal build --only-dependencies -j4 all
 
 ENTRYPOINT ["/bin/bash"]
