@@ -1,0 +1,17 @@
+{
+    "name": "Haskell",
+    "build": {
+      "dockerfile": "Dockerfile",
+      "context": "..",
+      "cacheFrom": "ethanrange/visionfx"
+    },
+    "remoteEnv": {
+      "DISPLAY": "192.168.0.6:0"
+    },
+    "runArgs": ["-it"],
+    "customizations": {
+      "vscode": {
+        "extensions": ["haskell.haskell", "justusadam.language-haskell"]
+      }
+    }
+  }
