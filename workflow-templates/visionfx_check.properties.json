@@ -1,0 +1,5 @@
+{
+    "name": "Build, Lint and Test Within VisionFX Container",
+    "description": "Run the required build and lint (hlint) jobs, as well as running tests for a project using visionfx (openCV + probFX)",
+    "iconName": "visionfx_check"
+}

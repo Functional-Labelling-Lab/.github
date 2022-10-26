@@ -42,8 +42,35 @@ A dataset of images of lanes to be labelled by our models.
 
 [GitHub - Pytorch Implementation](https://github.com/yuliangguo/Pytorch_Generalized_3D_Lane_Detection) | [Paper](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123660664.pdf)
 
+### Approximate Bayesian Image Interpretation using Generative Probabilistic Graphics Programs
+Details a similar approach to that which we are taking.
+
+[Paper](https://arxiv.org/pdf/1307.0060.pdf)
+
+
 ## Reports
 ### Team Agreement
-Our first report detailing how we intend to work, basic plan for the project and protential risks.
+Our first report detailing how we intend to work, basic plan for the project and potential risks.
 
 [Report](https://github.com/Functional-Labelling-Lab/.github/blob/master/reports/Team%20Agreement/Team_Agreement.pdf)
+
+
+## Git Hygiene
+### Branch Naming Convention
+```bash
+prefix/branch-name-here
+```
+
+| Prefix | Description                                                                               |
+|--------|-------------------------------------------------------------------------------------------|
+| enh    | An enhancement (e.g new feature, or improving an existing feature)                        |
+| ref    | Refactor - should not change behaviour                                                    |
+| fix    | Fixing a bug, the jira ticket should be included - branch name can be generated from jira |
+| doc    | Adding or amending documentation                                                          |
+| msc    | Miscellaneous, any other change                                                           |
+
+### Pull Requests
+This [pull request template](./../pull_request_template.md) is used for all repos.
+- Description
+- Goals of PR (for reviewer to compare with the achieved)
+- Current changes and intended changes (in case of draft PR)

@@ -1,0 +1,19 @@
+name: VisionFX Publish
+run-name: Building a new container for visionFX
+
+on:
+  push:
+    branches: ['master']
+    paths: ['docker/VisionFXContainer/Dockerfile']
+        
+      build-and-publish-latest:
+        runs-on: ubuntu-latest
+        if: github.ref == 'refs/heads/master' 
+        steps:
+            - uses: actions/checkout@v2 
+            - name: Build and Publish latest Docker image
+              uses: VaultVulp/gp-docker-action@1.1.12
+              with:
+                  github-token: ${{ secrets.PACKAGES_GITHUB_TOKEN }}
+                  image-name: VisionFX-DevContainer
+                  dockerfile: docker/VisionFXContainer/Dockerfile

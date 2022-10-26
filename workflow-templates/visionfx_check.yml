@@ -1,0 +1,14 @@
+name: visionfx_check
+run-name: Checking a visionFX project for ${{ github.actor }} !
+
+on:
+  push:
+  pull_request:
+    types: [opened, reopened]
+  
+  jobs:
+    check_branch_name:
+      container: # container here (need to add to github container resgistry)
+      name: Checking pull request ${{ github.event.pull_request.title }}
+      steps:
+        - run: echo "${GITHUB_REF#refs/heads/}"
