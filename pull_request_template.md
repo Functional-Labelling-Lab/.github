@@ -1,5 +1,5 @@
 ## Description
-*write a basic description of changes here*
+write a basic description of changes here
 
 ## Goals
 - *add a new feature*
