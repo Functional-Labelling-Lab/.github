@@ -32,14 +32,6 @@ A probabilistic programming DSL embedded within haskell as a library.
 
 [Paper](https://github.com/min-nguyen/prob-fx/raw/main/paper.pdf) | [GitHub](https://github.com/min-nguyen/prob-fx)
 
-### CULane
-A dataset of images of lanes to be labelled by our models.
-
-[Website](https://xingangpan.github.io/projects/CULane.html)
-
-### Gen-LaneNet
-3D lane line generation from images.
-
 [GitHub - Pytorch Implementation](https://github.com/yuliangguo/Pytorch_Generalized_3D_Lane_Detection) | [Paper](https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123660664.pdf)
 
 ### Approximate Bayesian Image Interpretation using Generative Probabilistic Graphics Programs
@@ -54,6 +46,11 @@ Our first report detailing how we intend to work, basic plan for the project and
 
 [Report](https://github.com/Functional-Labelling-Lab/.github/blob/master/reports/Team%20Agreement/Team_Agreement.pdf)
 
+### Final Presentation
+[Report](https://github.com/Functional-Labelling-Lab/.github/blob/master/reports/Final%20Presentation/SEGP_Final_Presentation.pdf)
+
+### Final Report
+[Report](https://github.com/Functional-Labelling-Lab/.github/blob/master/reports/Final%20Report/report.pdf)
 
 ## Git Hygiene
 ### Branch Naming Convention
